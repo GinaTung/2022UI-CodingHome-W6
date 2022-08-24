@@ -3,3 +3,27 @@
   font-size: 20px;
   font-weight: 400;
 }
+.banner{
+  background-image: url('../images/bg_home.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 205px 0;
+  text-align: center;
+}
+/* Vertical gradient, from top to bottom */
+@mixin gradient-y($start-color: $primary, $end-color: $secondary, $start-percent: null, $end-percent: null) {
+  background-image: linear-gradient(180deg, $start-color $start-percent, $end-color $end-percent);
+}
+.gradient-y{
+  @include gradient-y;
+}
+.text-gradient-y{
+  @include gradient-y;
+  background-clip: text;
+  color: transparent;
+}
+h1{
+  font-size: 48px;
+  line-height: 70px;
+}
