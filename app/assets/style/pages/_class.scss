@@ -24,11 +24,25 @@
 }
 .card-body{
     padding: 0;
+    
 }
 
 .card-price{
     margin-left: 88px;
 }
+@media (min-width:767px){
+    .card-price{
+        margin-left: 16px;
+    }
+  }
+  @media (max-width:767px){
+    .card-content{
+        margin-bottom: 48px;
+    }
+    .card-price{
+        margin-left: 0px;
+    }
+  }
 /* Horizontal gradient, from left to right */
 @mixin gradient-x($start-color: $primary, $end-color: $secondary, $start-percent: null, $end-percent: null) {
     background-image: linear-gradient(104deg, $start-color $start-percent, $end-color $end-percent);
