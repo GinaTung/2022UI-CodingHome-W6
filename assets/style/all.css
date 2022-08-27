@@ -20,6 +20,7 @@
   --bs-white: #fff;
   --bs-gray: #6c757d;
   --bs-gray-dark: #343a40;
+  --bs-black: #000;
   --bs-primary: #62DB54;
   --bs-secondary: #09ACF5;
   --bs-success: #198754;
@@ -30,6 +31,7 @@
   --bs-dark: #2D2D2D;
   --bs-dark-2: #1C1C1C;
   --bs-white: #fff;
+  --bs-black: #000;
   --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
@@ -80,12 +82,12 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
 }
 
 h1, .h1 {
-  font-size: calc(1.375rem + 1.5vw);
+  font-size: calc(1.425rem + 2.1vw);
 }
 
 @media (min-width: 1200px) {
   h1, .h1 {
-    font-size: 2.5rem;
+    font-size: 3rem;
   }
 }
 
@@ -3848,6 +3850,47 @@ fieldset:disabled .btn {
   border-color: #fff;
 }
 
+.btn-black {
+  color: #fff;
+  background-color: #000;
+  border-color: #000;
+}
+
+.btn-black:hover {
+  color: #fff;
+  background-color: black;
+  border-color: black;
+}
+
+.btn-check:focus + .btn-black, .btn-black:focus {
+  color: #fff;
+  background-color: black;
+  border-color: black;
+  -webkit-box-shadow: 0 0 0 0.25rem rgba(38, 38, 38, 0.5);
+          box-shadow: 0 0 0 0.25rem rgba(38, 38, 38, 0.5);
+}
+
+.btn-check:checked + .btn-black,
+.btn-check:active + .btn-black, .btn-black:active, .btn-black.active,
+.show > .btn-black.dropdown-toggle {
+  color: #fff;
+  background-color: black;
+  border-color: black;
+}
+
+.btn-check:checked + .btn-black:focus,
+.btn-check:active + .btn-black:focus, .btn-black:active:focus, .btn-black.active:focus,
+.show > .btn-black.dropdown-toggle:focus {
+  -webkit-box-shadow: 0 0 0 0.25rem rgba(38, 38, 38, 0.5);
+          box-shadow: 0 0 0 0.25rem rgba(38, 38, 38, 0.5);
+}
+
+.btn-black:disabled, .btn-black.disabled {
+  color: #fff;
+  background-color: #000;
+  border-color: #000;
+}
+
 .btn-outline-primary {
   color: #62DB54;
   border-color: #62DB54;
@@ -4185,6 +4228,40 @@ fieldset:disabled .btn {
 
 .btn-outline-white:disabled, .btn-outline-white.disabled {
   color: #fff;
+  background-color: transparent;
+}
+
+.btn-outline-black {
+  color: #000;
+  border-color: #000;
+}
+
+.btn-outline-black:hover {
+  color: #fff;
+  background-color: #000;
+  border-color: #000;
+}
+
+.btn-check:focus + .btn-outline-black, .btn-outline-black:focus {
+  -webkit-box-shadow: 0 0 0 0.25rem rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 0 0.25rem rgba(0, 0, 0, 0.5);
+}
+
+.btn-check:checked + .btn-outline-black,
+.btn-check:active + .btn-outline-black, .btn-outline-black:active, .btn-outline-black.active, .btn-outline-black.dropdown-toggle.show {
+  color: #fff;
+  background-color: #000;
+  border-color: #000;
+}
+
+.btn-check:checked + .btn-outline-black:focus,
+.btn-check:active + .btn-outline-black:focus, .btn-outline-black:active:focus, .btn-outline-black.active:focus, .btn-outline-black.dropdown-toggle.show:focus {
+  -webkit-box-shadow: 0 0 0 0.25rem rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 0 0.25rem rgba(0, 0, 0, 0.5);
+}
+
+.btn-outline-black:disabled, .btn-outline-black.disabled {
+  color: #000;
   background-color: transparent;
 }
 
@@ -5875,6 +5952,16 @@ fieldset:disabled .btn {
   color: #525252;
 }
 
+.alert-black {
+  color: black;
+  background-color: #cccccc;
+  border-color: #b3b3b3;
+}
+
+.alert-black .alert-link {
+  color: black;
+}
+
 @-webkit-keyframes progress-bar-stripes {
   0% {
     background-position-x: 1rem;
@@ -6369,6 +6456,22 @@ fieldset:disabled .btn {
   color: #fff;
   background-color: #666666;
   border-color: #666666;
+}
+
+.list-group-item-black {
+  color: black;
+  background-color: #cccccc;
+}
+
+.list-group-item-black.list-group-item-action:hover, .list-group-item-black.list-group-item-action:focus {
+  color: black;
+  background-color: #b8b8b8;
+}
+
+.list-group-item-black.list-group-item-action.active {
+  color: #fff;
+  background-color: black;
+  border-color: black;
 }
 
 .btn-close {
@@ -7602,6 +7705,14 @@ fieldset:disabled .btn {
   color: white;
 }
 
+.link-black {
+  color: #000;
+}
+
+.link-black:hover, .link-black:focus {
+  color: black;
+}
+
 .ratio {
   position: relative;
   width: 100%;
@@ -7876,6 +7987,10 @@ fieldset:disabled .btn {
   top: 0 !important;
 }
 
+.top-24 {
+  top: 24% !important;
+}
+
 .top-50 {
   top: 50% !important;
 }
@@ -7886,6 +8001,10 @@ fieldset:disabled .btn {
 
 .bottom-0 {
   bottom: 0 !important;
+}
+
+.bottom-24 {
+  bottom: 24% !important;
 }
 
 .bottom-50 {
@@ -7900,6 +8019,10 @@ fieldset:disabled .btn {
   left: 0 !important;
 }
 
+.start-24 {
+  left: 24% !important;
+}
+
 .start-50 {
   left: 50% !important;
 }
@@ -7910,6 +8033,10 @@ fieldset:disabled .btn {
 
 .end-0 {
   right: 0 !important;
+}
+
+.end-24 {
+  right: 24% !important;
 }
 
 .end-50 {
@@ -8016,6 +8143,10 @@ fieldset:disabled .btn {
 
 .border-white {
   border-color: #fff !important;
+}
+
+.border-black {
+  border-color: #000 !important;
 }
 
 .border-1 {
@@ -9021,7 +9152,7 @@ fieldset:disabled .btn {
 }
 
 .fs-1 {
-  font-size: calc(1.375rem + 1.5vw) !important;
+  font-size: calc(1.425rem + 2.1vw) !important;
 }
 
 .fs-2 {
@@ -9049,10 +9180,14 @@ fieldset:disabled .btn {
 }
 
 .fs-8 {
-  font-size: 0.875rem !important;
+  font-size: 1rem !important;
 }
 
 .fs-9 {
+  font-size: 0.875rem !important;
+}
+
+.fs-10 {
   font-size: 0.75rem !important;
 }
 
@@ -9191,6 +9326,10 @@ fieldset:disabled .btn {
   color: #fff !important;
 }
 
+.text-black {
+  color: #000 !important;
+}
+
 .text-body {
   color: #212529 !important;
 }
@@ -9249,6 +9388,10 @@ fieldset:disabled .btn {
 
 .bg-white {
   background-color: #fff !important;
+}
+
+.bg-black {
+  background-color: #000 !important;
 }
 
 .bg-body {
@@ -13195,7 +13338,7 @@ fieldset:disabled .btn {
 
 @media (min-width: 1200px) {
   .fs-1 {
-    font-size: 2.5rem !important;
+    font-size: 3rem !important;
   }
   .fs-2 {
     font-size: 2rem !important;
@@ -13312,6 +13455,11 @@ h1, .h1 {
 }
 
 .product-introduction {
+  -webkit-box-shadow: 0px 0px 32px #00000058;
+          box-shadow: 0px 0px 32px #00000058;
+}
+
+.product-introduction-data {
   padding: 80px 0;
 }
 
@@ -13321,8 +13469,7 @@ h1, .h1 {
 }
 
 .product-card {
-  width: 306px;
-  padding: 48px 0;
+  padding: 48px 24px;
 }
 
 .product-card:hover {
@@ -13333,6 +13480,46 @@ h1, .h1 {
 .img-style2 {
   width: 40px;
   height: 40px;
+}
+
+.class-process {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.class-process .class-process-title {
+  padding-bottom: 74px;
+}
+
+.class-process .class-procces-card {
+  border: 1px solid #fff;
+  max-width: 306px;
+  border-radius: 12px;
+}
+
+@media (max-width: 376px) {
+  .class-process .class-procces-card {
+    max-width: 336px;
+  }
+}
+
+.course-menu {
+  padding-bottom: 80px;
+}
+
+.course-menu .course-menu-title {
+  padding-top: 80px;
+  padding-bottom: 48px;
+}
+
+.course-data {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.course-list {
+  border-radius: 24px;
+  margin-bottom: 56px;
 }
 
 .nav-link {
