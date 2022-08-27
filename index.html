@@ -9,13 +9,14 @@
     Boostrap Index
   </title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
   <link rel="stylesheet" href="./assets/style/all.css">
 </head>
 
 <body>
-  <div class="header bg-dark ">
+  <div class="header bg-dark fixed-top">
     <div class="container">
       <div class="d-flex justify-content-between align-items-center">
         <div class="logo col-2 py-3">
@@ -121,27 +122,30 @@
     </div>
   </div>
 </div>
-<div class="course-menu bg-dark px-2">
-  <div class="course-menu-title d-flex align-items-center flex-column mb-3">
-    <h3 class="mb-3">你想要學習的程式，都在這裡</h3>
-    <div class="border-style mb-4"></div>
-  </div>
-  <div class="row justify-content-center d-flex flex-nowrap">
-    <div class="class-btn-menu py-0">
-      <a href="#" type="button" class="btn btn-outline-white py-3 px-5">JavaScript</a>
-      <a href=" #" type="button" class="btn btn-outline-white py-3 px-5">HTML/CSS</a>
-      <a href="#" type="button" class="btn btn-outline-white py-3 px-5">SQL</a>
-      <a href="#" type="button" class="btn btn-outline-white py-3 px-5">Java</a>
-      <a href="#" type="button" class="btn btn-outline-white py-3 px-5">SQL</a>
-      <a href="#" type="button" class="btn btn-outline-white py-3 px-5">Bash/Shell</a>
-      <a href="#" type="button" class="btn btn-outline-white py-3 px-5">Python</a>
-      <a href="#" type="button" class="btn btn-outline-white py-3 px-5">Python</a>
-      <a href="#" type="button" class="btn btn-outline-white py-3 px-5">PHP</a>
-      <a href="#" type="button" class="btn btn-outline-white py-3 px-5">C++</a>
-      <a href="#" type="button" class="btn btn-outline-white py-3 px-5">C++</a>
+<div class="container-fluid bg-dark">
+  <div class="course-menu px-2">
+    <div class="course-menu-title d-flex align-items-center flex-column mb-3">
+      <h3 class="mb-3">你想要學習的程式，都在這裡</h3>
+      <div class="border-style mb-4"></div>
+    </div>
+    <div class="row justify-content-center d-flex flex-nowrap">
+      <div class="class-btn-menu">
+        <a href="#" type="button" class="btn btn-outline-white py-3 px-5">JavaScript</a>
+        <a href=" #" type="button" class="btn btn-outline-white py-3 px-5">HTML/CSS</a>
+        <a href="#" type="button" class="btn btn-outline-white py-3 px-5">SQL</a>
+        <a href="#" type="button" class="btn btn-outline-white py-3 px-5">Java</a>
+        <a href="#" type="button" class="btn btn-outline-white py-3 px-5">SQL</a>
+        <a href="#" type="button" class="btn btn-outline-white py-3 px-5">Bash/Shell</a>
+        <a href="#" type="button" class="btn btn-outline-white py-3 px-5">Python</a>
+        <a href="#" type="button" class="btn btn-outline-white py-3 px-5">Python</a>
+        <a href="#" type="button" class="btn btn-outline-white py-3 px-5">PHP</a>
+        <a href="#" type="button" class="btn btn-outline-white py-3 px-5">C++</a>
+        <a href="#" type="button" class="btn btn-outline-white py-3 px-5">C++</a>
+      </div>
     </div>
   </div>
 </div>
+
 
 <div class="course-data bg-black">
   <div class="container">
@@ -150,20 +154,22 @@
       <div class="border-style mb-4"></div>
     </div>
     <div class="row d-flex justify-content-around">
-      <div class="col course-list ">
-        <div class="card bg-dark course-list p-4 d-flex flex-column">
-          <div class="col d-flex flex-column align-items-center">
+      <div class="col col-md-6 col-lg-3 course-list">
+        <div class="card bg-dark d-flex flex-column">
+          <div class="col d-flex flex-column align-items-center p-4 pb-0">
             <img class="img-style1" src="./assets/images/teacher01.jpg" class="img-fluid rounded-start" alt="teacher01">
-            <p>Belinda</p>
+            <p class="mb-4">Belinda</p>
           </div>
           <div class="card-body">
-            <div class="card-content">
-              <h4 class="card-title">基礎前端 - HTMLe</h4>
+            <div class="card-content p-4 pt-0 pb-5">
+              <h5 class="card-title">基礎前端 - HTMLE</h5>
+              <h5 class="card-title text-dark mb-0">基</h5>
               <h6 class="text-primary">前端語言</h6>
-              <p class="card-text">帶領無基礎的平民老百姓，從最基礎的 HTML
-                語法出發，使用最淺顯易懂的語言與生活隨處可見的例子，輕鬆進入網頁架設的世界，完成一個基礎的網頁架設。</p>
+              <p class="card-text">帶領無基礎的平民老百姓，從最基礎的 HTML 語法出發，使用最淺顯易懂的語言與生活隨處可見的例子...</p>
+              <!-- <p class="card-text"></p> -->
             </div>
-            <div class="col d-flex justify-content-around align-items-center">
+            <hr class="m-0">
+            <div class="d-flex justify-content-around align-items-center p-3">
               <p class="mb-1">50分鐘</p>
               <h2>NT$1600</h2>
             </div>
@@ -171,123 +177,249 @@
         </div>
 
       </div>
-      <div class="col course-list ">
-        <div class="card bg-dark course-list p-4 d-flex flex-column">
-          <div class="col d-flex flex-column align-items-center">
-            <img class="img-style1" src="./assets/images/teacher01.jpg" class="img-fluid rounded-start" alt="teacher01">
-            <p>Belinda</p>
+      <div class="col col-md-6 col-lg-3 course-list">
+        <div class="card bg-dark d-flex flex-column">
+          <div class="d-flex flex-column align-items-center p-4 pb-0">
+            <img class="img-style1" src="./assets/images/teacher02.jpg" class="img-fluid rounded-start" alt="teacher02">
+            <p class="mb-4">Guava</p>
           </div>
           <div class="card-body">
-            <div class="card-content">
-              <h4 class="card-title">基礎前端 - HTMLe</h4>
-              <h6 class="text-primary">前端語言</h6>
-              <p class="card-text">帶領無基礎的平民老百姓，從最基礎的 HTML
-                語法出發，使用最淺顯易懂的語言與生活隨處可見的例子，輕鬆進入網頁架設的世界，完成一個基礎的網頁架設。</p>
+            <div class="card-content p-4 pt-0 pb-5">
+              <h5 class="card-title">2022 Python 全攻略｜從入門到實務</h5>
+              <h6 class="text-primary">後端語言</h6>
+              <p class="card-text">
+                Python支援多種程式設計範式，包括函數式、指令式、反射式、結構化和物件導向程式設計，它擁有...</p>
             </div>
-            <div class="col d-flex justify-content-around align-items-center">
+            <hr class="m-0">
+            <div class="d-flex justify-content-around align-items-center p-3">
               <p class="mb-1">50分鐘</p>
-              <h2>NT$1600</h2>
+              <h2>NT$2000</h2>
             </div>
           </div>
         </div>
 
       </div>
-      <div class="col course-list ">
-        <div class="card bg-dark course-list p-4 d-flex flex-column">
-          <div class="col d-flex flex-column align-items-center">
-            <img class="img-style1" src="./assets/images/teacher01.jpg" class="img-fluid rounded-start" alt="teacher01">
-            <p>Belinda</p>
+      <div class="col col-md-6 col-lg-3 course-list">
+        <div class="card bg-dark d-flex flex-column">
+          <div class="d-flex flex-column align-items-center p-4 pb-0">
+            <img class="img-style1 " src="./assets/images/teacher03.jpg" class="img-fluid rounded-start"
+              alt="teacher03">
+            <p class="mb-4">Joe</p>
           </div>
           <div class="card-body">
-            <div class="card-content">
-              <h4 class="card-title">基礎前端 - HTMLe</h4>
-              <h6 class="text-primary">前端語言</h6>
-              <p class="card-text">帶領無基礎的平民老百姓，從最基礎的 HTML
-                語法出發，使用最淺顯易懂的語言與生活隨處可見的例子，輕鬆進入網頁架設的世界，完成一個基礎的網頁架設。</p>
+            <div class="card-content p-4 pt-0 pb-5">
+              <h5 class="card-title">活用Line Bot｜APP開發到上架完整實戰攻略</h5>
+              <h6 class="text-primary">行動應用開發</h6>
+              <p class="card-text">Line Bot可用於實用的目的，如客戶服務或資訊獲取，有些聊天機器人會搭載自然語言處理系統，但...</p>
             </div>
-            <div class="col d-flex justify-content-around align-items-center">
+            <hr class="m-0">
+            <div class="d-flex justify-content-around align-items-center p-3">
               <p class="mb-1">50分鐘</p>
-              <h2>NT$1600</h2>
+              <h2>NT$1800</h2>
             </div>
           </div>
         </div>
 
       </div>
-      <div class="col course-list ">
-        <div class="card bg-dark course-list p-4 d-flex flex-column">
-          <div class="col d-flex flex-column align-items-center">
-            <img class="img-style1" src="./assets/images/teacher01.jpg" class="img-fluid rounded-start" alt="teacher01">
-            <p>Belinda</p>
+      <div class="col col-md-6 col-lg-3 course-list">
+        <div class="card bg-dark d-flex flex-column">
+          <div class="d-flex flex-column align-items-center p-4 pb-0">
+            <img class="img-style1 " src="./assets/images/teacher04.jpg" class="img-fluid rounded-start"
+              alt="teacher04">
+            <p class="mb-4">Lina</p>
           </div>
           <div class="card-body">
-            <div class="card-content">
-              <h4 class="card-title">基礎前端 - HTMLe</h4>
-              <h6 class="text-primary">前端語言</h6>
-              <p class="card-text">帶領無基礎的平民老百姓，從最基礎的 HTML
-                語法出發，使用最淺顯易懂的語言與生活隨處可見的例子，輕鬆進入網頁架設的世界，完成一個基礎的網頁架設。</p>
+            <div class="card-content p-4 pt-0 pb-5">
+              <h5 class="card-title">基礎Linux 零基礎七天入門｜入門到實務</h5>
+              <h6 class="text-primary">作業系統與伺服器</h6>
+              <p class="card-text">
+                Linux是一種自由和開放原始碼的類UNIX作業系統，作業系統中包含了許多使用者圖形介面和其他實...</p>
             </div>
-            <div class="col d-flex justify-content-around align-items-center">
+            <hr class="m-0">
+            <div class="d-flex justify-content-around align-items-center p-3">
               <p class="mb-1">50分鐘</p>
-              <h2>NT$1600</h2>
+              <h2>NT$1100</h2>
             </div>
           </div>
         </div>
 
       </div>
-
-      <button class="btn gradient-x text-white border-0 fs-7 py-2 px-9">立即預約</button>
+    </div>
+    <div class="d-flex justify-content-center">
+      <button class="btn gradient-x text-white border-0 fs-7 py-2 px-9 course-btn">立即預約</button>
     </div>
   </div>
 </div>
-<div class="container">
-  <h1 class="index__h1">這是一段話</h1>
-  <div class="alert alert-primary" role="alert">
-    A simple primary alert—check it out!
-  </div>
-  <div class="alert alert-secondary" role="alert">
-    A simple secondary alert—check it out!
-  </div>
-  <div class="alert alert-success" role="alert">
-    A simple success alert—check it out!
-  </div>
-  <div class="alert alert-danger" role="alert">
-    A simple danger alert—check it out!
-  </div>
-  <div class="alert alert-warning" role="alert">
-    A simple warning alert—check it out!
-  </div>
-  <div class="alert alert-info" role="alert">
-    A simple info alert—check it out!
-  </div>
-  <div class="alert alert-light" role="alert">
-    A simple light alert—check it out!
-  </div>
-  <div class="alert alert-dark" role="alert">
-    A simple dark alert—check it out!
+
+<div class="container-fluid px-0">
+  <div class="course-benefits">
+    <ul class="course-benefits-card list-unstyled row">
+      <li class="course-benefits-card-title col col-xl-3 col-md-6">
+        <span class="material-icons opac-1 mb-3">
+          question_answer
+        </span>
+        <h3 class="mb-3">對症下藥，專案製作</h3>
+        <div class="border-style mb-4"></div>
+        <p class="opac-2">除了可以瘋狂提問之外<br>還有機會一起完成專案</p>
+      </li>
+      <li class="course-benefits-card-title col col-xl-3 col-md-6">
+        <span class="material-icons opac-1 mb-3">
+          lightbulb
+        </span>
+        <h3 class="mb-3">激發你的學習潛力</h3>
+        <div class="border-style mb-4"></div>
+        <p class="opac-2">進度制課程安排&個人化學習建議<br>有效管理你的學習動力</p>
+      </li>
+      <li class="course-benefits-card-title col col-xl-3 col-md-6">
+        <span class="material-icons opac-1 mb-3">
+          thumb_up_alt
+        </span>
+        <h3 class="mb-3">學習效率</h3>
+        <div class="border-style mb-4"></div>
+        <p class="opac-2">針對學員狀況調整內容與步調<br>學習精準最有效</p>
+      </li>
+      <li class="course-benefits-card-title col col-xl-3 col-md-6">
+        <span class="material-icons opac-1 mb-3">
+          people_alt
+        </span>
+        <h3 class="mb-3">一對一指導</h3>
+        <div class="border-style mb-4"></div>
+        <p class="opac-2">針對目的進行客製化課程安排<br>快速的學以致用</p>
+      </li>
+    </ul>
+
   </div>
 </div>
 
-<!-- Button trigger modal -->
-<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-  Launch demo modal
-</button>
-
-<!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+<div class="course-article bg-dark-2">
+  <div class="container">
+    <div class="course-article-menu-title d-flex align-items-center flex-column mb-3">
+      <h3 class="mb-3">文章分享</h3>
+      <div class="border-style mb-4"></div>
+    </div>
+    <div class="row py-3">
+      <div class="col-md-4">
+        <div class="card d-flex flex-column border-0 bg-dark-2 position-relative" style="padding: 32px;">
+          <div class="squareRounded squareRounded-topLeft position-absolute top-0 start-0"></div>
+          <div class="squareRounded squareRounded-topRight position-absolute top-0 end-0"></div>
+          <div class="squareRounded squareRounded-bottomLeft position-absolute bottom-0 start-0"></div>
+          <div class="squareRounded squareRounded-bottomRight position-absolute bottom-0 end-0"></div>
+          <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/week6-202207/article02.jpg?raw=true"
+            class="card-img-top rounded-0" alt="圖片">
+          <div class="card-body p-0">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+              content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
       </div>
-      <div class="modal-body">
-        ...
+      <div class="col-md-4">
+        <div class="card d-flex flex-column border-0 bg-dark-2 position-relative" style="padding: 32px;">
+          <div class="squareRounded squareRounded-topLeft position-absolute top-0 start-0"></div>
+          <div class="squareRounded squareRounded-topRight position-absolute top-0 end-0"></div>
+          <div class="squareRounded squareRounded-bottomLeft position-absolute bottom-0 start-0"></div>
+          <div class="squareRounded squareRounded-bottomRight position-absolute bottom-0 end-0"></div>
+          <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/week6-202207/article02.jpg?raw=true"
+            class="card-img-top rounded-0" alt="圖片">
+          <div class="card-body p-0">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+              content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
       </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
+      <div class="col-md-4">
+        <div class="card d-flex flex-column border-0 bg-dark-2 position-relative" style="padding: 32px;">
+          <div class="squareRounded squareRounded-topLeft position-absolute top-0 start-0"></div>
+          <div class="squareRounded squareRounded-topRight position-absolute top-0 end-0"></div>
+          <div class="squareRounded squareRounded-bottomLeft position-absolute bottom-0 start-0"></div>
+          <div class="squareRounded squareRounded-bottomRight position-absolute bottom-0 end-0"></div>
+          <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/week6-202207/article02.jpg?raw=true"
+            class="card-img-top rounded-0" alt="圖片">
+          <div class="card-body p-0">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+              content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
       </div>
     </div>
+  </div>
+</div>
+
+<div class="feedback">
+  <div class="container">
+    <h2 class="text-center text-white" style="margin-bottom: 64px;">專屬你的學習課程<br>超過 3000 位學員得到了程式超能力</h2>
+    <div class="row justify-content-center">
+      <div class="col-md-8">
+        <!-- Slider main container -->
+        <div class="swiper position-relative">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide position-relative">
+              <div class="swiper-img">
+                <img src="./assets/images/share.jpg" alt="share">
+              </div>
+              <div class="card">
+                <h3 class="mb-3 mb-md-2">老師很有耐心</h3>
+                <p class="mb-0">老師手把手的細心教學，用手繪圖，以淺顯易懂的方式，讓零網頁基礎的我也能快速了解網頁的架構與原理，學網頁變得有趣多了！</p>
+                <img src="./assets/images/student01.jpg" alt="student01" class="card-img">
+              </div>
+            </div>
+            <div class="swiper-slide position-relative">
+              <div class="swiper-img">
+                <img
+                  src="https://images.unsplash.com/photo-1501504905252-473c47e087f8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1548&q=80"
+                  alt="">
+              </div>
+              <div class="card">
+                <h3 class="mb-3 mb-md-2">老師很有耐心</h3>
+                <p class="mb-0">老師手把手的細心教學，用手繪圖，以淺顯易懂的方式，讓零網頁基礎的我也能快速了解網頁的架構與原理，學網頁變得有趣多了！</p>
+                <img src="./assets/images/student02.jpg" alt="student02" class="card-img">
+              </div>
+            </div>
+            <div class="swiper-slide position-relative">
+              <div class="swiper-img">
+                <img src="./assets/images/share.jpg" alt="share">
+              </div>
+              <div class="card">
+                <h3 class="mb-3 mb-md-2">老師很有耐心</h3>
+                <p class="mb-0">老師手把手的細心教學，用手繪圖，以淺顯易懂的方式，讓零網頁基礎的我也能快速了解網頁的架構與原理，學網頁變得有趣多了！</p>
+                <img src="./assets/images/student03.jpg" alt="student03" class="card-img">
+              </div>
+            </div>
+            <div class="swiper-slide position-relative">
+              <div class="swiper-img">
+                <img
+                  src="https://images.unsplash.com/photo-1501504905252-473c47e087f8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1548&q=80"
+                  alt="">
+              </div>
+              <div class="card">
+                <h3 class="mb-4 mb-md-2">老師很有耐心</h3>
+                <p class="mb-0">老師手把手的細心教學，用手繪圖，以淺顯易懂的方式，讓零網頁基礎的我也能快速了解網頁的架構與原理，學網頁變得有趣多了！</p>
+                <img src="./assets/images/student04.jpg" alt="student04" class="card-img">
+              </div>
+            </div>
+            ...
+          </div>
+          <!-- 左右按鈕和 pagination -->
+          <div class="d-flex align-items-center justify-content-center swiper-buttons">
+            <span class="material-icons swiper-button-prev fs-md link-primary me-4">
+              west
+            </span>
+            <div class="swiper-pagination d-flex"></div>
+            <span class="material-icons swiper-button-next fs-md link-primary ms-4">
+              east
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+
   </div>
 </div>
 
@@ -298,6 +430,7 @@
     </footer>
 
     <script src="./assets/js/vendors.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="./assets/js/all.js"></script>
 </body>
 

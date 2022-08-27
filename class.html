@@ -9,13 +9,14 @@
     Boostrap Index
   </title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
   <link rel="stylesheet" href="./assets/style/all.css">
 </head>
 
 <body>
-  <div class="header bg-dark ">
+  <div class="header bg-dark fixed-top">
     <div class="container">
       <div class="d-flex justify-content-between align-items-center">
         <div class="logo col-2 py-3">
@@ -54,32 +55,36 @@
             </div>
         </div>
 
-        <div class="row justify-content-center">
-            <div class="col-xl-10 card bg-dark mb-3 p-9">
-                <div class="me-9">
+        <div class="row justify-content-center g-1 g-md-0">
+            <div class="col-xl-10 card bg-dark mb-3 p-9 d-flex flex-wrap justify-content-center flex-md-nowrap">
+                <div class="me-lg-9 me-3">
                     <div class="col d-flex flex-column align-items-center">
                         <img class="img-style1" src="./assets/images/teacher01.jpg" class="img-fluid rounded-start"
                             alt="teacher01">
                         <p>Belinda</p>
                     </div>
                 </div>
-                <div class="card-content col-xl-7">
+                <div class="card-content col-xl-7 col-md-7">
                     <h4 class="card-title">基礎前端 - HTMLe</h4>
                     <h6 class="text-primary">前端語言</h6>
                     <p class="card-text">帶領無基礎的平民老百姓，從最基礎的 HTML
                         語法出發，使用最淺顯易懂的語言與生活隨處可見的例子，輕鬆進入網頁架設的世界，完成一個基礎的網頁架設。</p>
                 </div>
                 <div class="col card-price text-center">
-                    <p class="mb-1">50分鐘</p>
-                    <h2>NT$1600</h2>
-                    <button class="btn btn-outline-white mb-1 fs-7 py-2 px-9">課程介紹</button>
-                    <button class="btn gradient-x text-white border-0 fs-7 py-2 px-9">立即預約</button>
+                    <div class="d-flex justify-content-center align-items-end d-md-block ">
+                        <p class="mb-3 mb-md-1 me-2 me-md-0">50分鐘</p>
+                        <h2 class="mb-3 mb-md-0">NT$1600</h2>
+                    </div>
+                    <div class="d-flex justify-content-center d-md-block">
+                        <button class="btn btn-outline-white mb-1 fs-7 py-2 px-lg-9 px-3 me-2 me-md-0">課程介紹</button>
+                        <button class="btn gradient-x text-white border-0 fs-7 py-2 px-lg-9 px-3">立即預約</button>
+                    </div>
+
                 </div>
             </div>
 
-
-            <div class="col-xl-10 card bg-dark mb-3 p-9">
-                <div class="me-9">
+            <div class="col-xl-10 card bg-dark mb-3 p-9 d-flex flex-wrap justify-content-center flex-md-nowrap">
+                <div class="me-lg-9 me-3">
                     <div class="col d-flex flex-column align-items-center">
                         <img class="img-style1 " src="./assets/images/teacher02.jpg" class="img-fluid rounded-start"
                             alt="teacher02">
@@ -87,7 +92,7 @@
                     </div>
 
                 </div>
-                <div class="card-content col-xl-7">
+                <div class="card-content col-xl-7 col-md-7">
                     <h4 class="card-title">2022 Python 全攻略｜從入門到實務</h4>
                     <h6 class="text-primary">後端語言</h6>
                     <p class="card-text">
@@ -95,17 +100,19 @@
                     </p>
                 </div>
                 <div class="col card-price text-center">
-                    <p class="mb-1">50分鐘</p>
-                    <h2>NT$2000</h2>
-                    <button class="btn btn-outline-white mb-1 fs-7 py-2 px-9">課程介紹</button>
-                    <button class="btn gradient-x text-white border-0 fs-7 py-2 px-9">立即預約</button>
+                    <div class="d-flex justify-content-center align-items-end d-md-block ">
+                        <p class="mb-3 mb-md-1 me-2 me-md-0">50分鐘</p>
+                        <h2 class="mb-3 mb-md-0">NT$2000</h2>
+                    </div>
+                    <div class="d-flex justify-content-center d-md-block">
+                        <button class="btn btn-outline-white mb-1 fs-7 py-2 px-lg-9 px-3 me-2 me-md-0">課程介紹</button>
+                        <button class="btn gradient-x text-white border-0 fs-7 py-2 px-lg-9 px-3">立即預約</button>
+                    </div>
                 </div>
 
             </div>
-
-
-            <div class="col-xl-10 card bg-dark mb-3 p-9">
-                <div class="me-9">
+            <div class="col-xl-10 card bg-dark mb-3 p-9 d-flex flex-wrap justify-content-center flex-md-nowrap">
+                <div class="me-lg-9 me-3">
                     <div class="col d-flex flex-column align-items-center">
                         <img class="img-style1 " src="./assets/images/teacher03.jpg" class="img-fluid rounded-start"
                             alt="teacher03">
@@ -113,7 +120,7 @@
                     </div>
                 </div>
 
-                <div class="card-content col-xl-7">
+                <div class="card-content col-xl-7 col-md-7">
                     <h4 class="card-title">活用 Line Bot ｜APP 開發到上架完整實戰攻略</h4>
                     <h6 class="text-primary">行動應用開發</h6>
                     <p class="card-text">Line Bot
@@ -122,15 +129,19 @@
                         如何結合其他工具的應用。</p>
                 </div>
                 <div class="col card-price text-center">
-                    <p class="mb-1">50分鐘</p>
-                    <h2>NT$1800</h2>
-                    <button class="btn btn-outline-white mb-1 fs-7 py-2 px-9">課程介紹</button>
-                    <button class="btn gradient-x text-white border-0 fs-7 py-2 px-9">立即預約</button>
+                    <div class="d-flex justify-content-center align-items-end d-md-block ">
+                        <p class="mb-3 mb-md-1 me-2 me-md-0">50分鐘</p>
+                        <h2 class="mb-3 mb-md-0">NT$1800</h2>
+                    </div>
+                    <div class="d-flex justify-content-center d-md-block">
+                        <button class="btn btn-outline-white mb-1 fs-7 py-2 px-lg-9 px-3 me-2 me-md-0">課程介紹</button>
+                        <button class="btn gradient-x text-white border-0 fs-7 py-2 px-lg-9 px-3">立即預約</button>
+                    </div>
                 </div>
             </div>
 
-            <div class="col-xl-10 card bg-dark mb-3 p-9">
-                <div class="me-9">
+            <div class="col-xl-10 card bg-dark mb-3 p-9 d-flex flex-wrap justify-content-center flex-md-nowrap">
+                <div class="me-lg-9 me-3">
                     <div class="col d-flex flex-column align-items-center">
                         <img class="img-style1 " src="./assets/images/teacher04.jpg" class="img-fluid rounded-start"
                             alt="teacher04">
@@ -138,17 +149,19 @@
                     </div>
                 </div>
 
-                <div class="card-content col-xl-7">
+                <div class="card-content col-xl-7 col-md-7">
                     <h4 class="card-title">基礎Linux 零基礎七天入門｜入門到實務</h4>
                     <h6 class="text-primary">作業系統與伺服器</h6>
                     <p class="card-text">
                         Linux是一種自由和開放原始碼的類UNIX作業系統，作業系統中包含了許多使用者圖形介面和其他實用工具。課程會一步一步帶著你走，讓你能夠從頭開始學習程式語言的基本語法</p>
                 </div>
                 <div class="col card-price text-center">
-                    <p class="mb-1">50分鐘</p>
-                    <h2>NT$1100</h2>
-                    <button class="btn btn-outline-white mb-1 fs-7 py-2 px-9">課程介紹</button>
-                    <button class="btn gradient-x text-white border-0 fs-7 py-2 px-9">立即預約</button>
+                    <div class="d-flex justify-content-center align-items-end d-md-block ">
+                        <p class="mb-3 mb-md-1 me-2 me-md-0">50分鐘</p>
+                        <h2 class="mb-3 mb-md-0">NT$1100</h2>
+                    </div>
+                    <button class="btn btn-outline-white mb-1 fs-7 py-2 px-lg-9 px-3">課程介紹</button>
+                    <button class="btn gradient-x text-white border-0 fs-7 py-2 px-lg-9 px-3">立即預約</button>
                 </div>
             </div>
         </div>
@@ -164,6 +177,7 @@
     </footer>
 
     <script src="./assets/js/vendors.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="./assets/js/all.js"></script>
 </body>
 
