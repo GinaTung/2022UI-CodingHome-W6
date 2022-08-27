@@ -1,5 +1,6 @@
 .nav-link{
     padding: 16px 0 16px 48px;
+    color:$white;
     &:hover{
         color: $primary;
     }
@@ -12,5 +13,8 @@
 .fz-style-1{
     font-size: 18px;
     line-height: 26px;
+    &:hover{
+        color: $primary;
+    }
 }
 
