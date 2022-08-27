@@ -40,15 +40,19 @@ h1{
   margin-bottom: 0;
 }
 .product-introduction{
+  box-shadow: 0px 0px 32px #00000058;
+}
+.product-introduction-data{
   padding: 80px 0;
+
 }
 .border-style{
   border-bottom: 3px solid $primary;
   width: 50px;
 }
 .product-card{
-  width: 306px;
-  padding: 48px 0;
+  // width: 306px;
+  padding: 48px 24px;
   &:hover{
     border: 1px solid $primary;
     border-radius: 25%;
@@ -57,4 +61,42 @@ h1{
 .img-style2{
   width: 40px;
   height: 40px;
+}
+.class-process{
+  padding-top: 80px;
+  padding-bottom: 80px;
+  .class-process-title{
+    padding-bottom: 74px;
+    
+  }
+  .class-procces-card{
+    border: 1px solid $white;
+    // padding: 48px;
+    max-width: 306px;
+    border-radius: 12px;
+  }
+}
+@media (max-width:376px){
+  .class-process{
+  .class-procces-card{
+   max-width: 336px;
+    }
+  }
+}
+.course-menu{
+  padding-bottom: 80px;
+  .course-menu-title{
+    padding-top: 80px;
+    padding-bottom: 48px;
+  }
+}
+
+.course-data{
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.course-list{
+  border-radius: 24px;
+  margin-bottom: 56px;
 }
