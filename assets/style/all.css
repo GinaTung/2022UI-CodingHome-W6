@@ -13413,6 +13413,11 @@ img {
      object-fit: cover;
 }
 
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
 .banner {
   background-image: url("../images/bg_home.jpg");
   background-size: cover;
