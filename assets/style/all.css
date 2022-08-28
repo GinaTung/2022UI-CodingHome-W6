@@ -13426,6 +13426,19 @@ img {
   border: 1px solid #fff;
 }
 
+.banner-content .fz-style-2 {
+  font-size: 18px;
+}
+
+@media (max-width: 576px) {
+  .banner-content {
+    padding: 32px 48px;
+  }
+  .banner-content .fz-style-2 {
+    font-size: 14px;
+  }
+}
+
 .square {
   width: 10px;
   height: 10px;
@@ -13452,6 +13465,18 @@ h1, .h1 {
   font-size: 48px;
   line-height: 70px;
   margin-bottom: 0;
+}
+
+@media (max-width: 992px) {
+  h1, .h1 {
+    font-size: 36px;
+  }
+}
+
+@media (max-width: 576px) {
+  h1, .h1 {
+    font-size: 24px;
+  }
 }
 
 .product-introduction {
@@ -13530,28 +13555,32 @@ h1, .h1 {
   width: 172px;
 }
 
-.course-benefits .course-benefits-card {
-  background-image: url("../images/info01.jpg"), url("../images/info02.jpg"), url("../images/info03.jpg"), url("../images/info04.jpg");
-  background-size: 25.5% 100%;
+.bg-1 {
+  background-image: url("../images/info01.jpg");
+  background-size: cover;
   background-repeat: no-repeat;
-  background-position: 0% 0,33% 0%,66% 0,100% 0;
   padding: 256px 0;
-  text-align: left;
-  opacity: 0.9;
-  margin-left: 0;
-  margin-right: 0;
-  margin-bottom: 0;
 }
 
-.course-benefits .course-benefits-card .course-benefits-card-title {
-  padding: 0 48px;
+.bg-2 {
+  background-image: url("../images/info02.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 256px 0;
 }
 
-@media (max-width: 992px) {
-  .course-benefits .course-benefits-card {
-    background-size: 50% 50%;
-    background-position: 0% 0,100% 0,-1% 0;
-  }
+.bg-3 {
+  background-image: url("../images/info03.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 256px 0;
+}
+
+.bg-4 {
+  background-image: url("../images/info04.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 256px 0;
 }
 
 .course-article {
