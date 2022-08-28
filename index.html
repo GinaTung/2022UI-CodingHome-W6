@@ -16,24 +16,29 @@
 </head>
 
 <body>
-  <div class="header bg-dark sticky-top">
-    <div class="container">
-      <div class="d-flex justify-content-between align-items-center">
-        <div class="logo col-2 py-3">
-          <a href="index.html">
-            <img src="./assets/images/logo.svg" alt="codinghome-logo">
-          </a>
-        </div>
-        <ul class="nav fz-style-1">
+  <nav class="navbar navbar-expand-lg navbar-light bg-dark sticky-top">
+    <div class="container-fluid">
+      <a class="navbar-brand text-white" href="#">
+        <img src="./assets/images/logo2.svg" alt="logo" class="d-inline-block align-text-top">
+        Coding Home
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="material-icons img-white">
+          menu
+        </span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-lg-end " id="navbarNav">
+        <ul class="navbar-nav align-items-center">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="index.html">首頁</a>
+            <a class="nav-link" aria-current="page" href="index.html">首頁</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="class.html">課程介紹</a>
           </li>
           <li class="nav-item">
             <a class="nav-link d-flex align-items-center" href="#">
-              <span class="material-icons me-1">
+              <span class="material-icons me-1 img-white">
                 account_circle
               </span>
               登入</a>
@@ -41,7 +46,8 @@
         </ul>
       </div>
     </div>
-  </div>
+  </nav>
+  <!-- </div> -->
   
 <div class="banner">
   <div class="container">
@@ -128,8 +134,8 @@
       <h3 class="mb-3">你想要學習的程式，都在這裡</h3>
       <div class="border-style mb-4"></div>
     </div>
-    <div class="row justify-content-center d-flex flex-nowrap">
-      <div class="class-btn-menu">
+    <div class="row justify-content-center">
+      <div class="class-btn-menu ">
         <a href="#" type="button" class="btn btn-outline-white py-3 px-5">JavaScript</a>
         <a href=" #" type="button" class="btn btn-outline-white py-3 px-5">HTML/CSS</a>
         <a href="#" type="button" class="btn btn-outline-white py-3 px-5">SQL</a>
@@ -253,7 +259,7 @@
 
 <div class="container-fluid px-0">
   <div class="course-benefits">
-    <ul class="course-benefits-card list-unstyled row g-0">
+    <ul class="course-benefits-card list-unstyled row g-0 my-0">
       <li class="course-benefits-card-title bg-1 col-12 col-xl-3 col-md-6 mx-0 px-9">
         <span class="material-icons opac-1 mb-3">
           question_answer
@@ -307,7 +313,7 @@
           <img src="./assets/images/article01.jpg" class="card-img-top rounded-0" alt="article01">
           <div class="card-body p-0">
             <h6 class="card-title py-3">2022 前端開發者學習地圖</h6>
-            <p class="card-text fs-8">轉職為前端的這條職業路上該如何發展？本篇為前端開發者提供學習地圖參考</p><br>
+            <p class="card-text fs-8">轉職為前端的這條職業路上該如何發展？本篇為前端開發者提供學習地圖參考</p>
             <a href="#" class="d-flex justify-content-end text-white">MORE</a>
           </div>
         </div>
@@ -321,7 +327,9 @@
           <img src="./assets/images/article02.jpg" class="card-img-top rounded-0" alt="article02">
           <div class="card-body p-0">
             <h6 class="card-title py-3">軟體工程師有哪些類別</h6>
-            <p class="card-text fs-8">軟體工程師領域廣闊，許多人仍然對此相關職務感到陌生，本篇就介紹主流的軟體工程師職務</p>
+            <p class="card-text fs-8">軟體工程師領域廣闊，許多人仍然對此相關職務感到陌生，本篇就介紹主流...
+            <div class="d-none d-xxl-inline">的軟體工程師職務</div>
+            </p>
             <a href="#" class="d-flex justify-content-end text-white">MORE</a>
           </div>
         </div>
