@@ -48,3 +48,8 @@
   .gradient-x{
     @include gradient-x;
   }
+  .modal-footer{
+    .btn:hover{
+        background: $primary ;
+    }
+}   
