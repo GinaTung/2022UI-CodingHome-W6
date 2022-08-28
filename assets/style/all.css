@@ -13869,6 +13869,10 @@ h1, .h1 {
   background-image: linear-gradient(104deg, #62DB54, #09ACF5);
 }
 
+.modal-footer .btn:hover {
+  background: #62DB54;
+}
+
 .class {
   padding-bottom: 90px;
 }
