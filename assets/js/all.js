@@ -21,6 +21,8 @@ var swiper = new Swiper('.swiper', {
   }
 });
 var swiper2 = new Swiper('.swiper2', {
+  slidesPerView: 4,
+  spaceBetween: 1,
   scrollbar: {
     el: ".swiper-scrollbar",
     hide: true

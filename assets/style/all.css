@@ -13413,11 +13413,6 @@ img {
      object-fit: cover;
 }
 
-.swiper {
-  width: 100%;
-  height: 100%;
-}
-
 .banner {
   background-image: url("../images/bg_home.jpg");
   background-size: cover;
@@ -13936,6 +13931,11 @@ h1, .h1 {
 .gradient-x {
   background-image: -o-linear-gradient(346deg, #62DB54, #09ACF5);
   background-image: linear-gradient(104deg, #62DB54, #09ACF5);
+}
+
+.swiper2 {
+  width: 100%;
+  height: 100%;
 }
 
 /*# sourceMappingURL=all.css.map */
