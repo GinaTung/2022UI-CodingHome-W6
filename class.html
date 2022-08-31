@@ -124,7 +124,8 @@
         </div>
 
         <div class="row justify-content-center g-1 g-md-0">
-            <div class="col-xl-10 card bg-dark mb-3 p-9 d-flex flex-wrap justify-content-center flex-md-nowrap">
+            <div data-aos="fade-left"
+                class="col-xl-10 card bg-dark mb-3 p-9 d-flex flex-wrap justify-content-center flex-md-nowrap">
                 <div class="me-lg-9 me-3">
                     <div class="col d-flex flex-column align-items-center">
                         <img class="img-style1" src="./assets/images/teacher01.jpg" class="img-fluid rounded-start"
@@ -151,7 +152,8 @@
                 </div>
             </div>
 
-            <div class="col-xl-10 card bg-dark mb-3 p-9 d-flex flex-wrap justify-content-center flex-md-nowrap">
+            <div data-aos="fade-right"
+                class="col-xl-10 card bg-dark mb-3 p-9 d-flex flex-wrap justify-content-center flex-md-nowrap">
                 <div class="me-lg-9 me-3">
                     <div class="col d-flex flex-column align-items-center">
                         <img class="img-style1 " src="./assets/images/teacher02.jpg" class="img-fluid rounded-start"
@@ -179,7 +181,8 @@
                 </div>
 
             </div>
-            <div class="col-xl-10 card bg-dark mb-3 p-9 d-flex flex-wrap justify-content-center flex-md-nowrap">
+            <div data-aos="fade-left"
+                class="col-xl-10 card bg-dark mb-3 p-9 d-flex flex-wrap justify-content-center flex-md-nowrap">
                 <div class="me-lg-9 me-3">
                     <div class="col d-flex flex-column align-items-center">
                         <img class="img-style1 " src="./assets/images/teacher03.jpg" class="img-fluid rounded-start"
@@ -208,7 +211,8 @@
                 </div>
             </div>
 
-            <div class="col-xl-10 card bg-dark mb-3 p-9 d-flex flex-wrap justify-content-center flex-md-nowrap">
+            <div data-aos="fade-right"
+                class="col-xl-10 card bg-dark mb-3 p-9 d-flex flex-wrap justify-content-center flex-md-nowrap">
                 <div class="me-lg-9 me-3">
                     <div class="col d-flex flex-column align-items-center">
                         <img class="img-style1 " src="./assets/images/teacher04.jpg" class="img-fluid rounded-start"
@@ -248,7 +252,11 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
-      AOS.init();
+      AOS.init({
+        offset: 300, // offset (in px) from the original trigger point
+        delay: 5, // values from 0 to 3000, with step 50ms
+        duration: 1000 // values from 0 to 3000, with step 50ms
+      });
     </script>
     <script src="./assets/js/all.js"></script>
 </body>
